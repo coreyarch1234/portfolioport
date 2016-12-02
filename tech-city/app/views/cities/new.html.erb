@@ -1,0 +1,12 @@
+<h1>New City</h1>
+<%= form_for(@city) do |c| %>
+    <div>
+        <%= c.text_field :title %>
+    </div>
+    <div>
+        <%= c.text_area :description %>
+    </div>
+    <div>
+        <%= submit_tag "Submit" %>
+    </div>
+<% end %>
