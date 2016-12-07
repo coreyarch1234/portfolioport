@@ -1,5 +1,6 @@
 class CitiesController < ApplicationController
   def index
+    #   Won't have anything to do with any other model except to display the front_cities page
       @cities = City.all
   end
 
@@ -19,7 +20,7 @@ class CitiesController < ApplicationController
   private
 
   def city_params
-      params.require.permit(:title, :description)
+      params.require(:city).permit(:title, :description)
   end
 
 end

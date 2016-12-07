@@ -1,0 +1,17 @@
+<div>
+    <%= form_for(@user) do |u| %>
+    <h4>New User</h4>
+    <div>
+        <%= u.text_field :name, placeholder: "Name" %>
+        <hr>
+        <%= u.text_field :email, placeholder: "Email" %>
+        <hr>
+        <%= u.text_field :city, placeholder: "City" %>
+        <hr>
+        <%= u.text_area :about, placeholder: "Who are you? i.e. iOS Developer" %>
+    </div>
+    <div>
+        <%= submit_tag "Submit", class: 'btn btn-default' %>
+    </div>
+    <% end %>
+</div>

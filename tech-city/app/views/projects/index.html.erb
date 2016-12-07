@@ -1,0 +1,8 @@
+<h2>Name:<%= @user.name %></h2>
+<p>About:<%= @user.about %></p>
+<hr>
+<% @user.projects.each do |p| %>
+        <h3>Open Project (Title): <%= link_to p.title, user_project_path(@user, p.id) %></h3>
+<% end %>
+<hr>
+<%= link_to 'Add A Project', new_user_project_path(@user) %>

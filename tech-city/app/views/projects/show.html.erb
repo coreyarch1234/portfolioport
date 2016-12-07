@@ -1,0 +1,24 @@
+
+<h2>Title</h2>
+<% p = @project %>
+ <%= p.title %>
+ <hr>
+<h2>GitHub</h2>
+<%= p.github %>
+<hr>
+<h2>Overview</h2>
+<%= p.description %>
+<hr>
+<h2>The Problem</h2>
+<%= p.problem %>
+<hr>
+<h2>My Solution</h2>
+<%= p.solution %>
+<hr>
+<h2>Features</h2>
+<%= p.features %>
+<hr>
+<h2>Technology Used</h2>
+<%= p.technology %>
+<hr>
+<%= link_to 'Edit Info', edit_project_path(@project) %>

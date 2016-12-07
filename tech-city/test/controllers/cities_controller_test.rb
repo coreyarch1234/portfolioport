@@ -21,8 +21,10 @@ class CitiesControllerTest < ActionDispatch::IntegrationTest
   #   assert_response :success
   # end
   test "can create a city" do
-    get cities_create_url
-    assert_response :success
+    # get cities_create_url
+    # assert_response :success
+    @city = City.new(title: "Best City", description: "The best city")
+    assert @city.save
   end
 
 end
