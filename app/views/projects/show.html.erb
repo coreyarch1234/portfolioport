@@ -1,7 +1,7 @@
 <div class="container">
     <link rel="stylesheet" type="text/css" href="bootstrap.css">
     <div class="page-header">
-      <h1> <%= p.title %> <small> <%= p.description %> </small></h1>
+      <h1> <%= @project.title %> <small> <%= @project.description %> </small></h1>
     </div>
 
     <div class="panel panel-default">
@@ -9,7 +9,7 @@
         <h3 class="panel-title">The Problem</h3>
       </div>
       <div class="panel-body">
-        <%= p.problem %>
+        <%= @project.problem %>
       </div>
     </div>
     <div class="panel panel-default">
@@ -17,7 +17,7 @@
         <h3 class="panel-title">The Solution</h3>
       </div>
       <div class="panel-body">
-        <%= p.solution %>
+        <%= @project.solution %>
       </div>
     </div>
     <div class="panel panel-default">
@@ -25,7 +25,7 @@
         <h3 class="panel-title">Features</h3>
       </div>
       <div class="panel-body">
-        <%= p.features %>
+        <%= @project.features %>
       </div>
     </div>
     <div class="panel panel-default">
@@ -33,7 +33,7 @@
         <h3 class="panel-title">Technology Used</h3>
       </div>
       <div class="panel-body">
-        <%= p.technology %>
+        <%= @project.technology %>
       </div>
     </div>
     <!-- only display edit info if user is on their own content and signed in -->

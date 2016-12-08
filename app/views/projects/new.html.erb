@@ -5,45 +5,50 @@
 
         <div class="input-group">
           <span class="input-group-addon" id="basic-addon1"></span>
-          <input type="text" class="form-control" placeholder="Title of Project" aria-describedby="basic-addon1">
+          <%= p.text_field :title, placeholder: "Title" %>
+          <!-- <input type="text" class="form-control" placeholder="Title of Project" aria-describedby="basic-addon1"> -->
         </div>
-        <%= p.text_field :title, placeholder: "Title" %>
 
         <div class="input-group">
-          <span class="input-group-addon" id="basic-addon3">https://www.</span>
-          <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="Link to GitHub repository or live project">
+          <span class="input-group-addon" id="basic-addon3"></span>
+          <%= p.text_field :github, placeholder: "Link to GitHub repository" %>
+          <!-- <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="Link to GitHub repository or live project"> -->
         </div>
-        <%= p.text_field :github, placeholder: "GitHub Link" %>
 
-        <div class="input-group">
-          <span class="input-group-addon" id="basic-addon1"></span>
-          <input type="text" class="form-control" placeholder="Description of project" aria-describedby="basic-addon1">
-        </div>
-        <%= p.text_area :description, placeholder: "Overview" %>
 
         <div class="input-group">
           <span class="input-group-addon" id="basic-addon1"></span>
-          <input type="text" class="form-control" placeholder="Problem" aria-describedby="basic-addon1">
+          <%= p.text_area :description, placeholder: "Overview" %>
+          <!-- <input type="text" class="form-control" placeholder="Description of project" aria-describedby="basic-addon1"> -->
         </div>
-        <%= p.text_area :problem, placeholder: "The Problem" %>
+
 
         <div class="input-group">
           <span class="input-group-addon" id="basic-addon1"></span>
-          <input type="text" class="form-control" placeholder="Solution" aria-describedby="basic-addon1">
+          <%= p.text_area :problem, placeholder: "The Problem" %>
+          <!-- <input type="text" class="form-control" placeholder="Problem" aria-describedby="basic-addon1"> -->
         </div>
-        <%= p.text_area :solution, placeholder: "Your Solution" %>
 
         <div class="input-group">
           <span class="input-group-addon" id="basic-addon1"></span>
-          <input type="text" class="form-control" placeholder="Features, seperated by commas" aria-describedby="basic-addon1">
+          <%= p.text_area :solution, placeholder: "Your Solution" %>
+
+          <!-- <input type="text" class="form-control" placeholder="Solution" aria-describedby="basic-addon1"> -->
         </div>
-        <%= p.text_area :features, placeholder: "Features" %>
 
         <div class="input-group">
           <span class="input-group-addon" id="basic-addon1"></span>
-          <input type="text" class="form-control" placeholder="Technologies used, seperated by commas" aria-describedby="basic-addon1">
+          <%= p.text_area :features, placeholder: "Features" %>
+          <!-- <input type="text" class="form-control" placeholder="Features, seperated by commas" aria-describedby="basic-addon1"> -->
         </div>
-        <%= p.text_field :technology, placeholder: "Technologies" %>
+
+
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon1"></span>
+          <%= p.text_field :technology, placeholder: "Technologies" %>
+          <!-- <input type="text" class="form-control" placeholder="Technologies used, seperated by commas" aria-describedby="basic-addon1"> -->
+        </div>
+
 
     </div>
     <div class="text-xs-left">
