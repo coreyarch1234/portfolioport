@@ -1,25 +1,41 @@
 <div class="container">
-    <h2>Title</h2>
-        <% p = @project %>
-        <%= p.title %>
-        <hr>
-    <h2>GitHub</h2>
-        <%= p.github %>
-        <hr>
-    <h2>Overview</h2>
-        <%= p.description %>
-        <hr>
-    <h2>The Problem</h2>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <div class="page-header">
+      <h1> <%= p.title %> <small> <%= p.description %> </small></h1>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">The Problem</h3>
+      </div>
+      <div class="panel-body">
         <%= p.problem %>
-        <hr>
-    <h2>My Solution</h2>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">The Solution</h3>
+      </div>
+      <div class="panel-body">
         <%= p.solution %>
-        <hr>
-    <h2>Features</h2>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Features</h3>
+      </div>
+      <div class="panel-body">
         <%= p.features %>
-        <hr>
-    <h2>Technology Used</h2>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Technology Used</h3>
+      </div>
+      <div class="panel-body">
         <%= p.technology %>
-        <hr>
+      </div>
+    </div>
+    <!-- only display edit info if user is on their own content and signed in -->
     <%= link_to 'Edit Info', edit_project_path(@project) %>
 </div>

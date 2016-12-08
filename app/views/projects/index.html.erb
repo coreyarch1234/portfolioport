@@ -12,27 +12,19 @@
             <div class="row">
               <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
+                    <!-- replace image link with link to uploaded img -->
                   <img src="http://i.imgur.com/VZ1LS8n.png" alt="...">
                   <div class="caption">
                     <h3><%= p.title %></h3>
                     <p><%= p.description %></p>
-                    <p><a href="#" class="btn btn-primary" role="button">Live link</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    <p><a href=<%= p.github %> class="btn btn-primary" role="button">Github</a></p>
                   </div>
                 </div>
               </div>
             </div>
-            
+
     <% end %>
 
-
-<!-- 
-    <h1><%= @user.name %></h1>
-    <div class="text-xs-left">
-        <p><%= @user.about %></p>
-    </div>
-    <% @user.projects.each do |p| %>
-            <h3><%= link_to p.title, user_project_path(@user, p.id)%></h3>
-    <% end %> -->
 </div>
 <div class="container">
     <hr>
