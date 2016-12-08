@@ -1,6 +1,6 @@
-<div>
+<div class= "container">
     <%= form_for [@user, @project] do |p| %>
-    <div>
+    <div class="form-group">
         <%= p.text_field :title, placeholder: "Title" %>
         <hr>
         <%= p.text_field :github, placeholder: "GitHub Link" %>
@@ -15,7 +15,7 @@
         <hr>
         <%= p.text_field :technology, placeholder: "Technologies" %>
     </div>
-    <div>
+    <div class="text-xs-left">
         <%= submit_tag "Submit", class: 'btn btn-default' %>
     </div>
     <% end %>

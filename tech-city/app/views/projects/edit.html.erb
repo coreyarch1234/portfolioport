@@ -1,4 +1,4 @@
-<div>
+<div class="container">
     <%= form_for(@project) do |p| %>
     <div>
         <%= p.text_field :title, placeholder: "Title" %>
@@ -14,7 +14,7 @@
         <%= p.text_area :features, placeholder: "Features" %>
         <hr>
         <%= p.text_field :technology, placeholder: "Technologies" %>
-        <div>
+        <div class="text-xs-right">
             <%= p.submit "Submit"%>
         </div>
     </div>

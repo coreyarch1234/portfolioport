@@ -13,7 +13,6 @@ class UsersController < ApplicationController
         @user = User.create(user_params)
         redirect_to(user_projects_path(@user))
     end
-
     private
 
     def user_params

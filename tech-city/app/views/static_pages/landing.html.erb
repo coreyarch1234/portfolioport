@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PortfolioDev</title>
+        <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    </head>
+
+    <body>
+      <div class="jumbotron">
+          <h1>PortfolioDev</h1>
+          <p>The default place for developers to
+              create impressive portfolios.</p>
+          <p><a class="btn btn-primary btn-lg" href="#" role="button">See projects</a></p>
+          <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Sign Up</a></p> -->
+          <div class="text-xs-right"><%= link_to 'Sign Up', controller: 'users', action: 'new' %></div>
+      </div>
+
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <!-- <img src="http://i.imgur.com/VZ1LS8n.png" alt="..."> -->
+          <div class="caption container">
+              <h3>Why?</h3>
+              <p>Save time in creating your own portfolio site. Sign up and submit projects and see your
+              your work come alive. </p>
+              <!-- <p><a href="#" class="btn btn-primary" role="button">Live link</a> <a href="#" class="btn btn-default" role="button">Button</a></p> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <!-- <img src="http://i.imgur.com/VZ1LS8n.png" alt="..."> -->
+          <div class="caption container">
+              <h3>How?</h3>
+              <p>Sign up and start customizing your portfolio template.</p>
+              <!-- <p><a href="#" class="btn btn-primary" role="button">Live link</a> <a href="#" class="btn btn-default" role="button">Button</a></p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+</html>

@@ -1,8 +1,14 @@
-<h2>Name:<%= @user.name %></h2>
-<p>About:<%= @user.about %></p>
-<hr>
-<% @user.projects.each do |p| %>
-        <h3>Open Project (Title): <%= link_to p.title, user_project_path(@user, p.id) %></h3>
-<% end %>
-<hr>
-<%= link_to 'Add A Project', new_user_project_path(@user) %>
+<div class="container">
+    <h1><%= @user.name %></h1>
+    <div class="text-xs-left">
+        <p><%= @user.about %></p>
+    </div>
+    <% @user.projects.each do |p| %>
+            <h3><%= link_to p.title, user_project_path(@user, p.id)%></h3>
+    <% end %>
+</div>
+<div class="container">
+    <hr>
+    <%= link_to 'Add A Project', new_user_project_path(@user) %>
+    <hr>
+</div>
