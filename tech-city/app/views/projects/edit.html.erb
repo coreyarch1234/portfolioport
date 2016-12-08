@@ -1,19 +1,62 @@
 <div class="container">
     <%= form_for(@project) do |p| %>
     <div>
+        <link rel="stylesheet" type="text/css" href="bootstrap.css">
+
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon1"></span>
+          <input type="text" class="form-control" placeholder="Title of Project" aria-describedby="basic-addon1">
+        </div>
         <%= p.text_field :title, placeholder: "Title" %>
-        <hr>
+
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon3">https://www.</span>
+          <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="Link to GitHub repository or live project">
+        </div>
         <%= p.text_field :github, placeholder: "GitHub Link" %>
-        <hr>
+
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon1"></span>
+          <input type="text" class="form-control" placeholder="Description of project" aria-describedby="basic-addon1">
+        </div>
         <%= p.text_area :description, placeholder: "Overview" %>
-        <hr>
+
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon1"></span>
+          <input type="text" class="form-control" placeholder="Problem" aria-describedby="basic-addon1">
+        </div>
         <%= p.text_area :problem, placeholder: "The Problem" %>
-        <hr>
+
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon1"></span>
+          <input type="text" class="form-control" placeholder="Solution" aria-describedby="basic-addon1">
+        </div>
         <%= p.text_area :solution, placeholder: "Your Solution" %>
-        <hr>
+
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon1"></span>
+          <input type="text" class="form-control" placeholder="Features, seperated by commas" aria-describedby="basic-addon1">
+        </div>
         <%= p.text_area :features, placeholder: "Features" %>
-        <hr>
+
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon1"></span>
+          <input type="text" class="form-control" placeholder="Technologies used, seperated by commas" aria-describedby="basic-addon1">
+        </div>
         <%= p.text_field :technology, placeholder: "Technologies" %>
+        <!-- 
+        <hr>
+        
+        <hr>
+        
+        <hr>
+        
+        <hr>
+        
+        <hr>
+        
+        <hr> -->
+        
         <div class="text-xs-right">
             <%= p.submit "Submit"%>
         </div>
