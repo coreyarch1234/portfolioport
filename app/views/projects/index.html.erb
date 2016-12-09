@@ -2,9 +2,8 @@
     <link rel="stylesheet" type="text/css" href="bootstrap.css">
 
     <div class="jumbotron">
-      <h1><%= @user.name %></h1>
-      <p><%= @user.about %></p>
-      <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">See projects</a></p> -->
+        <h1><%= @user.name %></h1>
+        <p><%= @user.about %></p>
     </div>
 
     <% @user.projects.each do |p| %>
@@ -12,8 +11,6 @@
             <div class="row">
               <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
-                    <!-- replace image link with link to uploaded img -->
-                  <!-- <img src="http://i.imgur.com/VZ1LS8n.png" alt="..."> -->
                   <div class="caption">
                     <h3><%= p.title %></h3>
                     <p><%= p.description %></p>
