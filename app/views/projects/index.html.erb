@@ -15,10 +15,10 @@
                     <!-- replace image link with link to uploaded img -->
                   <!-- <img src="http://i.imgur.com/VZ1LS8n.png" alt="..."> -->
                   <div class="caption">
-                    <h3><%= p.title %></h3>
+                    <a href=<%= link_to "See project", project_path(p.id)%>><%= p.title %></a>
                     <p><%= p.description %></p>
                     <p><a href=<%= p.github %> class="btn btn-primary" role="button">Github</a> </p>
-                    <%= link_to "See project", project_path(p.id)%>
+                     <!-- <%= link_to "See project", project_path(p.id)%> -->
                     <hr>
                   </div>
                 </div>
