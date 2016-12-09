@@ -1,9 +1,13 @@
 <div class="container">
     <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="override.css">
 
     <div class="jumbotron">
-        <h1><%= @user.name %></h1>
-        <p><%= @user.about %></p>
+
+      <h1><%= @user.name %></h1>
+      <h2><%= @user.about %></h2>
+      <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">See projects</a></p> -->
+
     </div>
 
     <% @user.projects.each do |p| %>
@@ -12,10 +16,10 @@
               <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
                   <div class="caption">
-                    <h3><%= p.title %></h3>
+                    <p class="title"><%= link_to p.title , project_path(p.id)%></p>
                     <p><%= p.description %></p>
                     <p><a href=<%= p.github %> class="btn btn-primary" role="button">Github</a> </p>
-                    <%= link_to "See project", project_path(p.id)%>
+                     <!-- <%= link_to "See project", project_path(p.id)%> -->
                     <hr>
                   </div>
                 </div>
