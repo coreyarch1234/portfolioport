@@ -1,7 +1,8 @@
 <div class="container">
     <link rel="stylesheet" type="text/css" href="bootstrap.css">
     <div class="page-header">
-      <h1> <%= @project.title %> <small> <%= @project.description %> </small></h1>
+      <h1> <%= @project.title %></h1>
+      <h3> <small> <%= @project.description %> </small></h3>
     </div>
     <hr>
     <br>
@@ -41,5 +42,9 @@
       </div>
     </div>
     <!-- only display edit info if user is on their own content and signed in -->
-    <%= link_to 'Edit Info', edit_project_path(@project) %>
+    <br>
+    <%= link_to 'Edit Info', edit_project_path(@project), class:"btn btn-primary" %>
+    <br>
+    <br>
+    <%= link_to 'See Projects', user_projects_path(@current_user), class:"btn btn-primary" %>
 </div>

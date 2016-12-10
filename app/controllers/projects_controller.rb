@@ -1,13 +1,10 @@
 class ProjectsController < ApplicationController
+  before_filter :authorize
+
   def index
       @user = User.find(params[:user_id])
       @projects = Project.all
   end
-  # 
-  # def redirection
-  #     render "index"
-  # end
-  #
 
   def show
       @project = Project.find(params[:id])

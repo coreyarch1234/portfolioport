@@ -1,5 +1,14 @@
 Rails.application.routes.draw do
   root to: "static_pages#landing"
+
+  get '/login' => 'sessions#new'
+
+  post '/login' => 'sessions#create'
+  get '/logout' => 'sessions#destroy'
+
+  get '/signup' => 'users#new'
+  post '/users' => 'users#create'
+
   # Users
 
   # get 'signup', to: "users#new", as: :new_user

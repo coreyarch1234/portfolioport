@@ -1,3 +1,4 @@
+
 body {
 	background-color: #eee5bf;
 	font-family: "Optima";
@@ -11,6 +12,9 @@ body {
 
 #addClassButton{
 	font-size: 24px;
+}
+.btn {
+	background-color: black;
 }
 
 .title {
@@ -33,3 +37,4 @@ a{
 a .hover {
 	color: #c5c5c5;
 }
+@import "bootstrap";
