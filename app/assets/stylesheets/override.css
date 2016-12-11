@@ -24,6 +24,10 @@ body {
 	text-decoration: none;
 }
 
+.test{
+	background-color: black;
+}
+
 h1 {
 	font-size: 60px;
 }
