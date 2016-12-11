@@ -1,5 +1,5 @@
 <div class= "container">
-    <%= form_for [@user, @project] do |p| %>
+    <%= form_for [@user, @project], html: {multipart: true} do |p| %>
     <div class="form-group">
         <link rel="stylesheet" type="text/css" href="bootstrap.css">
 
@@ -11,7 +11,7 @@
 
         <div class="input-group">
           <span class="input-group-addon" id="basic-addon3"></span>
-          <%= p.text_field :github, placeholder: "Link to GitHub repository" %>
+          <%= p.text_field :github, placeholder: "Live Link" %>
           <!-- <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="Link to GitHub repository or live project"> -->
         </div>
 
@@ -25,13 +25,13 @@
 
         <div class="input-group">
           <span class="input-group-addon" id="basic-addon1"></span>
-          <%= p.text_area :problem, placeholder: "The Problem i.e. People need to get from point A to B, fast" %>
+          <%= p.text_area :problem, placeholder: "What Is The Problem Your Project Solves" %>
           <!-- <input type="text" class="form-control" placeholder="Problem" aria-describedby="basic-addon1"> -->
         </div>
 
         <div class="input-group">
           <span class="input-group-addon" id="basic-addon1"></span>
-          <%= p.text_area :solution, placeholder: "Your Solution i.e. A service that allows you to call a car from your phone" %>
+          <%= p.text_area :solution, placeholder: "What Is Your Solution" %>
 
           <!-- <input type="text" class="form-control" placeholder="Solution" aria-describedby="basic-addon1"> -->
         </div>
@@ -46,6 +46,13 @@
         <div class="input-group">
           <span class="input-group-addon" id="basic-addon1"></span>
           <%= p.text_field :technology, placeholder: "Technologies" %>
+          <!-- <input type="text" class="form-control" placeholder="Technologies used, seperated by commas" aria-describedby="basic-addon1"> -->
+        </div>
+
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon1"></span>
+          <%= p.label :image %><br>
+          <%= p.file_field :image %>
           <!-- <input type="text" class="form-control" placeholder="Technologies used, seperated by commas" aria-describedby="basic-addon1"> -->
         </div>
 
