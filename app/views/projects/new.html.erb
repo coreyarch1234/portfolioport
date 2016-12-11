@@ -1,22 +1,22 @@
 <link rel="stylesheet" type="text/css" href="bootstrap.css">
 <link rel="stylesheet" type="text/css" href="override.css">
-<link href="https://fonts.googleapis.com/css?family=Abel|Bungee|Open+Sans+Condensed:300|Oswald|Raleway|Roboto+Condensed|Slabo+27px|Space+Mono" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Abel|Bungee|Open+Sans+Condensed:300|Oswald|Raleway|Roboto+Condensed|Slabo+27px|Space+Mono" rel="stylesheet">
 
 <%= form_for [@user, @project], html: {multipart: true} do |p| %>
 <div class="page-header">
          <div class="jumbotron" style="margin-bottom: 0; ">
              <br>
 <!--             <form><input type="text" style="background-color: transparent; width: 500px; height: 100px; color: white; font-family: 'Bungee'; font-size: 50px;" placeholder=" Product title"></form>-->
-             
+
              <div style="background-color: transparent; width: 500px; height: 100px; color: white; font-family: 'Bungee'; font-size: 50px;"><%= p.text_field :title, placeholder: " Product title" %></div>
-             
+
              <hr>
-             
+
 <!--             <form><input type="text" style="background-color: transparent; width: 90%; height: 50px; color: #c0fdfb; font-family: 'Abel'; font-size: 22px;" placeholder=" Describe your product in one or two sentences"></form>-->
-            
+
              <div style="background-color: transparent; width: 90%; height: 50px; color: #c0fdfb; font-family: 'Abel'; font-size: 22px;"><%= p.text_area :description, placeholder: " Describe your product in one or two sentences" %></div>
         </div>
-      
+
     </div>
 
 <div class="leftContainer">
@@ -26,6 +26,7 @@
       <div class="panel-heading">
            <h3 class="panel-title">Problem</h3>
       </div>
+
         
 <!--        <form><input type="text" style="background-color: transparent; width: 90%; height: 60px; color: black; font-family: 'Open Sans Condensed'; font-size: 16px;" placeholder=" Describe the problem. Who experiences this problem? What data do you have to back your claims up?"></form>-->
         
@@ -51,9 +52,10 @@
     
         <div style="width: 100px; height:30px;"><%= p.file_field :image %></div>
     </div>
-    
-    
+
+
 </div>
+
 
 
 <div class="rightContainer">
@@ -63,11 +65,13 @@
       <div class="panel-heading">
         <h3 class="panel-title">Features</h3>
       </div>
+<<<<<<< HEAD
     
 <!--    <form><input type="text" style="background-color: transparent; width: 90%; height: 60px; color: black; font-family: 'Open Sans Condensed'; font-size: 16px;" placeholder=" What can a user do?"></form>-->
     
     <div style="background-color: transparent; width: 90%; height: 60px; color: black; font-family: 'Open Sans Condensed'; font-size: 16px;"><%= p.text_area :features, placeholder: " What can a user do?" %></div>
     
+
     </div>
     <hr>
     <div class="panel panel-default">
@@ -83,7 +87,7 @@
 
 
 
-   
+
 
 
 
@@ -109,7 +113,7 @@
 
         <div class="input-group">
           <span class="input-group-addon" id="basic-addon1"></span>
-          <%= p.text_area :description, placeholder: "Overview" %>
+          <div class="test"><%= p.text_area :description, placeholder: "Overview" %></div>
           <!-- <input type="text" class="form-control" placeholder="Description of project" aria-describedby="basic-addon1"> -->
         </div>
 
@@ -152,5 +156,6 @@
     <div class="text-xs-left">
         <%= submit_tag "Submit", class: 'btn btn-default' %>
     </div>
+    <% end %>
     <% end %>
 </div>
