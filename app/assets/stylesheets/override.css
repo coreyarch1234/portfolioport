@@ -7,12 +7,14 @@ body {
 
 .jumbotron {
 	background-color: #829191;
+    background-color: #black;
 	color: #e2d0be;
 }
 
 #addClassButton{
 	font-size: 24px;
 }
+
 .btn {
 	background-color: black;
 }
