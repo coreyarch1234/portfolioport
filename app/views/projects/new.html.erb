@@ -14,7 +14,7 @@
              
 <!--             <form><input type="text" style="background-color: transparent; width: 90%; height: 50px; color: #c0fdfb; font-family: 'Abel'; font-size: 22px;" placeholder=" Describe your product in one or two sentences"></form>-->
             
-             <div style="background-color: transparent; width: 90%; height: 50px; color: #c0fdfb; font-family: 'Abel'; font-size: 22px;"><%= p.text_area :description, placeholder: "Overview" %></div>
+             <div style="background-color: transparent; width: 90%; height: 50px; color: #c0fdfb; font-family: 'Abel'; font-size: 22px;"><%= p.text_area :description, placeholder: " Describe your product in one or two sentences" %></div>
         </div>
       
     </div>
@@ -27,7 +27,9 @@
            <h3 class="panel-title">Problem</h3>
       </div>
         
-        <form><input type="text" style="background-color: transparent; width: 90%; height: 60px; color: black; font-family: 'Open Sans Condensed'; font-size: 16px;" placeholder=" Describe the problem. Who experiences this problem? What data do you have to back your claims up?"></form>
+<!--        <form><input type="text" style="background-color: transparent; width: 90%; height: 60px; color: black; font-family: 'Open Sans Condensed'; font-size: 16px;" placeholder=" Describe the problem. Who experiences this problem? What data do you have to back your claims up?"></form>-->
+        
+        <div style="background-color: transparent; width: 90%; height: 60px; color: black; font-family: 'Open Sans Condensed'; font-size: 16px;"><%= p.text_area :problem, placeholder: " Describe the problem. Who experiences this problem? What data do you have to back your claims up?" %></div>
         
     </div>
     <hr>
@@ -35,7 +37,19 @@
       <div class="panel-heading">
            <h3 class="panel-title">Solution</h3>
       </div>
-      <form><input type="text" style="background-color: transparent; width: 90%; height: 60px; color: black; font-family: 'Open Sans Condensed'; font-size: 16px;" placeholder=" Describe how your product solves the problem. Are you asprin for a headache or morphine for a migraine?"></form>
+<!--      <form><input type="text" style="background-color: transparent; width: 90%; height: 60px; color: black; font-family: 'Open Sans Condensed'; font-size: 16px;" placeholder=" Describe how your product solves the problem. Are you asprin for a headache or morphine for a migraine?"></form>-->
+        
+      <div style="background-color: transparent; width: 90%; height: 60px; color: black; font-family: 'Open Sans Condensed'; font-size: 16px;"><%= p.text_area :solution, placeholder: " Describe how your product solves the problem. Are you asprin for a headache or morphine for a migraine?" %></div>
+    </div>
+    
+    
+    <hr>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+           <h3 class="panel-title">Screenshots</h3>
+      </div>
+    
+        <div style="width: 100px; height:30px;"><%= p.file_field :image %></div>
     </div>
     
     
@@ -50,7 +64,9 @@
         <h3 class="panel-title">Features</h3>
       </div>
     
-    <form><input type="text" style="background-color: transparent; width: 90%; height: 60px; color: black; font-family: 'Open Sans Condensed'; font-size: 16px;" placeholder=" What can a user do?"></form>
+<!--    <form><input type="text" style="background-color: transparent; width: 90%; height: 60px; color: black; font-family: 'Open Sans Condensed'; font-size: 16px;" placeholder=" What can a user do?"></form>-->
+    
+    <div style="background-color: transparent; width: 90%; height: 60px; color: black; font-family: 'Open Sans Condensed'; font-size: 16px;"><%= p.text_area :features, placeholder: " What can a user do?" %></div>
     
     </div>
     <hr>
@@ -58,7 +74,9 @@
       <div class="panel-heading">
         <h3 class="panel-title">Technology Used</h3>
       </div>
-      <form><input type="text" style="background-color: transparent; width: 90%; height: 60px; color: black; font-family: 'Open Sans Condensed'; font-size: 16px;" placeholder=" What frameworks, languages, libraries, and APIs did you use?"></form>
+<!--      <form><input type="text" style="background-color: transparent; width: 90%; height: 60px; color: black; font-family: 'Open Sans Condensed'; font-size: 16px;" placeholder=" What frameworks, languages, libraries, and APIs did you use?"></form>-->
+        
+        <div style="background-color: transparent; width: 90%; height: 60px; color: black; font-family: 'Open Sans Condensed'; font-size: 16px;"><%= p.text_field :technology, placeholder: " What frameworks, languages, libraries, and APIs did you use?" %></div>
     </div>
 
 </div>
