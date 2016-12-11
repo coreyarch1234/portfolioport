@@ -1,14 +1,22 @@
-<div class="container">
-    <link rel="stylesheet" type="text/css" href="bootstrap.css">
-    <div class="page-header">
-      <h1> <%= @project.title %></h1>
-      <h3> <small> <%= @project.description %> </small></h3>
+<link rel="stylesheet" type="text/css" href="bootstrap.css">
+<link rel="stylesheet" type="text/css" href="override.css">
+<link href="https://fonts.googleapis.com/css?family=Abel|Bungee|Open+Sans+Condensed:300|Oswald|Raleway|Roboto+Condensed|Slabo+27px|Space+Mono" rel="stylesheet"> 
+<div class="page-header">
+         <div class="jumbotron" style="margin-bottom: 0; ">
+             <br>
+            <h1 style="text-transform: uppercase;"> <%= @project.title %> </h1>
+             <hr>
+            <h3 class="desc"> <small> <%= @project.description %> </small></h3>
+        </div>
+      
     </div>
-    <hr>
+
+<div class="leftContainer">
+    <link rel="stylesheet" type="text/css" href="override.css">
     <br>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title">The Problem</h3>
+           <h3 class="panel-title">Problem</h3>
       </div>
       <div class="panel-body">
         <%= @project.problem %>
@@ -17,14 +25,22 @@
     <hr>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title">The Solution</h3>
+           <h3 class="panel-title">Solution</h3>
       </div>
       <div class="panel-body">
         <%= @project.solution %>
       </div>
     </div>
-    <hr>
-    <div class="panel panel-default">
+    
+    <%= image_tag @project.image.url{:medium} %>
+    
+</div>
+
+
+<div class="rightContainer">
+    <link rel="stylesheet" type="text/css" href="override.css">
+    <br>
+<div class="panel panel-default">
       <div class="panel-heading">
         <h3 class="panel-title">Features</h3>
       </div>
@@ -41,11 +57,11 @@
         <%= @project.technology %>
       </div>
     </div>
-    <%= image_tag @project.image.url{:medium} %>
-    <!-- only display edit info if user is on their own content and signed in -->
-    <br>
-    <%= link_to 'Edit Info', edit_project_path(@project), class:"btn btn-primary" %>
-    <br>
-    <br>
-    <%= link_to 'See Projects', user_projects_path(@current_user), class:"btn btn-primary" %>
+
 </div>
+
+<br>
+<%= link_to 'Edit Info', edit_project_path(@project), class:"btn btn-primary" %>
+<br>
+<br>
+<%= link_to 'See Projects', user_projects_path(@current_user), class:"btn btn-primary" %>
