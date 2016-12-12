@@ -22,9 +22,6 @@ body {
     text-transform: capitalize;
 }
 
-.test{
-	background-color: black;
-}
 
 h1 {
 	font-size: 60px;
@@ -42,15 +39,10 @@ a .hover {
 	color: #c5c5c5;
 }
 
-#test{
-    width: 100%;
-    height: 100px;
-    background-color: black;
-}
 
 .leftContainer {
-    float: left; 
-    width: 66.66666%; 
+    float: left;
+    width: 66.66666%;
     height: 80%;
     background-color: #f8e3ce;
     background-color: #fbebe1;
@@ -58,9 +50,9 @@ a .hover {
     font-family: "Open Sans Condensed";
 }
 
-.rightContainer {  
-    float: right; 
-    width: 33.33333%; 
+.rightContainer {
+    float: right;
+    width: 33.33333%;
     height: 80%;
     background-color: #fbebe1;
     background-color: #f8e3ce;
@@ -70,11 +62,11 @@ a .hover {
 
 .desc {
     font-family: 'Space Mono';
-    font-family: 'Abel'; 
+    font-family: 'Abel';
     color: #c0fdfb;
 }
 
 .panel-title{
-    font-family: 'Abel'; 
+    font-family: 'Abel';
 }
 @import "bootstrap";
