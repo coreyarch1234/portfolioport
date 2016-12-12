@@ -7,4 +7,10 @@ class Project < ApplicationRecord
     validates :technology, presence: true
     validates :problem, :solution, presence: true
     validates :features, presence: true
+    before_save do |p|
+        p.description = p.description.humanize
+        p.technology = p.technology.humanize
+        p.problem = p.problem.humanize
+        p.solution = p.solution.humanize
+    end
 end

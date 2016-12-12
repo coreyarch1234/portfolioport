@@ -15,10 +15,9 @@ class UsersController < ApplicationController
         @user = User.new(user_params)
         if @user.save
             session[:user_id] = @user.id
-            # redirect_to '/'
             redirect_to(user_projects_path(@user))
         else
-            redirect_to '/signup'
+            redirect_to '/signup', info: "Passwords must be at least 8 characters long", danger: "Invalid password or email"
         end
     end
     private
