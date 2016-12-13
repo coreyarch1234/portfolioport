@@ -3,8 +3,8 @@
     <h1>Login</h1>
     <%= form_tag '/login' do %>
         <div class= "form-group">
-          <div><%= text_field_tag :email, placeholder:"Email" %> </div>
-          <div><%= password_field_tag :password, placeholder:"Password" %></div>
+          <div><%= text_field_tag :email,  :placeholder=>'hey'%> </div>
+          <div><%= password_field_tag :password %></div>
          </div>
       <div>
           <%= submit_tag "Submit" %>
