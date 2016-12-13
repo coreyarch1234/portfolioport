@@ -1,7 +1,5 @@
-<link href="https://fonts.googleapis.com/css?family=Abel|Bungee|Open+Sans+Condensed:300|Oswald|Raleway|Roboto+Condensed|Slabo+27px|Space+Mono" rel="stylesheet">
-
 <%= form_for [@user, @project], html: {multipart: true} do |p| %>
-<div class="page-header">
+    <div class="page-header">
          <div class="jumbotron" style="margin-bottom: 0; ">
              <br>
             <!-- <form><input type="text" style="background-color: transparent; width: 500px; height: 100px; color: white; font-family: 'Bungee'; font-size: 50px;" placeholder=" Product title"></form> -->
@@ -10,77 +8,73 @@
              <hr>
              <div ><%= p.text_area :description, size: "30x10", placeholder: " Describe your product in a few sentences", style:"background-color: transparent; width: 90%; height: 50px; color: #c0fdfb; font-family: 'Abel'; font-size: 22px;" %></div>
         </div>
+    </div>
+
+    <div class="leftContainer">
+        <br>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+               <h3 class="panel-title">Problem</h3>
+          </div>
+
+
+    <!--        <form><input type="text" style="background-color: transparent; width: 90%; height: 60px; color: black; font-family: 'Open Sans Condensed'; font-size: 16px;" placeholder=" Describe the problem. Who experiences this problem? What data do you have to back your claims up?"></form>-->
+
+            <div ><%= p.text_area :problem, placeholder: " Describe the problem. Who experiences this problem? What data do you have to back your claims up?", style:"background-color: transparent; width: 90%; height: 150px; color: black; font-family: 'Open Sans Condensed'; font-size: 16px;" %></div>
+
+        </div>
+        <hr>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+               <h3 class="panel-title">Solution</h3>
+          </div>
+    <!--      <form><input type="text" style="background-color: transparent; width: 90%; height: 60px; color: black; font-family: 'Open Sans Condensed'; font-size: 16px;" placeholder=" Describe how your product solves the problem. Are you asprin for a headache or morphine for a migraine?"></form>-->
+
+          <div ><%= p.text_area :solution, placeholder: " Describe how your product solves the problem. Are you asprin for a headache or morphine for a migraine?", style:"background-color: transparent; width: 90%; height: 150px; color: black; font-family: 'Open Sans Condensed'; font-size: 16px;" %></div>
+        </div>
+
+
+        <hr>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+               <h3 class="panel-title">Screenshots</h3>
+          </div>
+
+            <div ><%= p.file_field :image, style:"width: 100px; height:30px;" %></div>
+        </div>
 
     </div>
 
-<div class="leftContainer">
-    <link rel="stylesheet" type="text/css" href="override.css">
-    <br>
+
+
+    <div class="rightContainer">
+        <br>
     <div class="panel panel-default">
-      <div class="panel-heading">
-           <h3 class="panel-title">Problem</h3>
-      </div>
+          <div class="panel-heading">
+            <h3 class="panel-title">Features</h3>
+          </div>
+    <!--    <form><input type="text" style="background-color: transparent; width: 90%; height: 60px; color: black; font-family: 'Open Sans Condensed'; font-size: 16px;" placeholder=" What can a user do?"></form>-->
+
+        <div ><%= p.text_area :features, placeholder: " What can a user do?", style:"background-color: transparent; width: 90%; height: 60px; color: black; font-family: 'Open Sans Condensed'; font-size: 16px;" %></div>
 
 
-<!--        <form><input type="text" style="background-color: transparent; width: 90%; height: 60px; color: black; font-family: 'Open Sans Condensed'; font-size: 16px;" placeholder=" Describe the problem. Who experiences this problem? What data do you have to back your claims up?"></form>-->
+        </div>
+        <hr>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Technology Used</h3>
+          </div>
+    <!--      <form><input type="text" style="background-color: transparent; width: 90%; height: 60px; color: black; font-family: 'Open Sans Condensed'; font-size: 16px;" placeholder=" What frameworks, languages, libraries, and APIs did you use?"></form>-->
 
-        <div ><%= p.text_area :problem, placeholder: " Describe the problem. Who experiences this problem? What data do you have to back your claims up?", style:"background-color: transparent; width: 90%; height: 150px; color: black; font-family: 'Open Sans Condensed'; font-size: 16px;" %></div>
-
+            <div ><%= p.text_field :technology, placeholder: "Frameworks, languages, API, etc...", style:"background-color: transparent; width: 90%; height: 60px; color: black; font-family: 'Open Sans Condensed'; font-size: 16px;" %></div>
+        </div>
+        <hr>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Is it Live?</h3>
+          </div>
+            <div ><%= p.text_field :github, placeholder: " Optional Live Link", style:"background-color: transparent; width: 90%; height: 60px; color: black; font-family: 'Open Sans Condensed'; font-size: 16px;" %></div>
+        </div>
     </div>
-    <hr>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-           <h3 class="panel-title">Solution</h3>
-      </div>
-<!--      <form><input type="text" style="background-color: transparent; width: 90%; height: 60px; color: black; font-family: 'Open Sans Condensed'; font-size: 16px;" placeholder=" Describe how your product solves the problem. Are you asprin for a headache or morphine for a migraine?"></form>-->
-
-      <div ><%= p.text_area :solution, placeholder: " Describe how your product solves the problem. Are you asprin for a headache or morphine for a migraine?", style:"background-color: transparent; width: 90%; height: 150px; color: black; font-family: 'Open Sans Condensed'; font-size: 16px;" %></div>
-    </div>
-
-
-    <hr>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-           <h3 class="panel-title">Screenshots</h3>
-      </div>
-
-        <div ><%= p.file_field :image, style:"width: 100px; height:30px;" %></div>
-    </div>
-
-</div>
-
-
-
-<div class="rightContainer">
-    <link rel="stylesheet" type="text/css" href="override.css">
-    <br>
-<div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title">Features</h3>
-      </div>
-<!--    <form><input type="text" style="background-color: transparent; width: 90%; height: 60px; color: black; font-family: 'Open Sans Condensed'; font-size: 16px;" placeholder=" What can a user do?"></form>-->
-
-    <div ><%= p.text_area :features, placeholder: " What can a user do?", style:"background-color: transparent; width: 90%; height: 60px; color: black; font-family: 'Open Sans Condensed'; font-size: 16px;" %></div>
-
-
-    </div>
-    <hr>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title">Technology Used</h3>
-      </div>
-<!--      <form><input type="text" style="background-color: transparent; width: 90%; height: 60px; color: black; font-family: 'Open Sans Condensed'; font-size: 16px;" placeholder=" What frameworks, languages, libraries, and APIs did you use?"></form>-->
-
-        <div ><%= p.text_field :technology, placeholder: "Frameworks, languages, API, etc...", style:"background-color: transparent; width: 90%; height: 60px; color: black; font-family: 'Open Sans Condensed'; font-size: 16px;" %></div>
-    </div>
-    <hr>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title">Is it Live?</h3>
-      </div>
-        <div ><%= p.text_field :github, placeholder: " Optional Live Link", style:"background-color: transparent; width: 90%; height: 60px; color: black; font-family: 'Open Sans Condensed'; font-size: 16px;" %></div>
-    </div>
-
-</div>
     <%= p.submit "Submit" %>
 <% end %>
