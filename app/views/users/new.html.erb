@@ -1,20 +1,16 @@
-<div class= "container">
-    <h1>Signup!</h1>
+
+
+<div id= "signup-container">
+    <h1>Glad you're joining us!</h1>
 
     <%= form_for(@user) do |f| %>
         <div class="form-group">
-          <%= f.text_field :name, placeholder: "Name" %>
-          <hr>
-          <%= f.text_field :email, placeholder: "Email" %>
-          <hr>
-          <%= f.text_field :city, placeholder: "City" %>
-          <hr>
-          <%= f.text_area :about, placeholder: "Who are you? i.e. iOS Developer" %>
-          <hr>
-          <%= f.password_field :password, placeholder: "Enter Password" %>
-          <hr>
-          <%= f.password_field :password_confirmation, placeholder: "Confirm Password" %>
-          <hr>
+          <div><%= f.text_field :name, placeholder: "Name" %></div>
+          <div><%= f.text_field :email, placeholder: "Email" %></div>
+          <div><%= f.text_field :city, placeholder: "City" %></div>
+          <div><%= f.text_field :about, placeholder: "Who are you? i.e. iOS Developer" %></div>
+          <div><%= f.password_field :password, placeholder: "Enter Password" %></div>
+          <div><%= f.password_field :password_confirmation, placeholder: "Confirm Password" %></div>
       </div>
       <div>
           <%= f.submit "Submit" %>

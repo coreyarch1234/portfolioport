@@ -14,7 +14,6 @@
                   <div class="caption">
                     <p class="title"><%= link_to p.title , project_path(p.id)%></p>
                     <p><%= p.description %></p>
-                    <!-- <p><a href=<%= p.github %> class="btn btn-primary" role="button"></a> </p> -->
                     <hr>
                   </div>
                 </div>
@@ -25,7 +24,6 @@
 
 </div>
 <div class="container">
-    <hr>
     <%= link_to 'Add A Project', new_user_project_path(@user) %>
     <hr>
 </div>
