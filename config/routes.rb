@@ -9,6 +9,9 @@ Rails.application.routes.draw do
   get '/signup' => 'users#new'
   post '/users' => 'users#create'
 
+ 
+
+
   # Users
 
   # get 'signup', to: "users#new", as: :new_user

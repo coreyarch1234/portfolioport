@@ -1,3 +1,7 @@
+
+body, html{
+	height: 100%;
+}
 body {
 	background-color: #f9f8f8;
 	font-family: "Open Sans Condensed";
@@ -22,6 +26,15 @@ body {
     text-transform: capitalize;
 }
 
+input {
+	background-color: transparent;
+	width: 500px;
+	height: 50px;
+	color: black;
+	font-family: 'Abel';
+	font-size: 16px;
+	margin-top: 10px;
+}
 
 h1 {
 	font-size: 60px;
@@ -60,6 +73,10 @@ a .hover {
     font-family: "Open Sans Condensed";
 }
 
+// .test {
+// 	background-color: black;
+// }
+
 .desc {
     font-family: 'Space Mono';
     font-family: 'Abel';
@@ -69,4 +86,33 @@ a .hover {
 .panel-title{
     font-family: 'Abel';
 }
+
+#signin-container, #signup-container{
+    margin: auto;
+    text-align: center;
+}
+
+#signup-container > input{
+    width: 200px;
+}
+
+.landing-section-one{
+
+	min-height: 100%;
+}
+
+.section {
+	min-height: 100%;
+}
+
+.section-a {
+	background-color: #64b6ac;
+}
+
+.section-b {
+	background-color: #6488ac;
+}
+
+
+
 // @import "bootstrap";

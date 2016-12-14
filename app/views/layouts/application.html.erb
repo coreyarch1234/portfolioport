@@ -15,9 +15,28 @@
   </head>
 
   <body>
+        <!-- <% if @current_user %>
+            <nav class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <h2 class="navbar-text panel-title"><%= @current_user.name %> </h2>
+                    </div>
+                    <div class="navbar-header">
+                        <h2 class="navbar-text panel-title"> <%= link_to "Logout", '/logout'%></h2>
+                    </div>
+            </nav>
+        <% else %>
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                    <%= link_to 'Login', '/login', class:"navbar-brand"%>
+                </div>
+                <div class="navbar-header">
+                    <%= link_to 'Signup', '/signup', class:"navbar-brand"%>
+                </div>
+            </nav>
+        <% end %> -->
       <%= render 'flash_messages' %>
      <% if @current_user %>
-          Signed in as <%= @current_user.name %> | <%= link_to "Logout", '/logout' %>
+          <p class="navbar-text">Signed in as <%= @current_user.name %> | <%= link_to "Logout", '/logout' %></p>
      <% else %>
          <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
      <% end %>

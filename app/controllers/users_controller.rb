@@ -10,8 +10,6 @@ class UsersController < ApplicationController
 
 
     def create
-        # @user = User.create(user_params)
-        # redirect_to(user_projects_path(@user))
         @user = User.new(user_params)
         if @user.save
             session[:user_id] = @user.id
