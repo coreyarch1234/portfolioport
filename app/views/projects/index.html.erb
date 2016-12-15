@@ -18,7 +18,7 @@
             <div class="caption">
               <a href="/" class="title"><%= link_to p.title , project_path(p.id)%></a>
               <p> <%= p.description %></p>
-              <p><%= link_to 'Open Live Project',"http://#{p.github}", target: "_blank" %></p>
+              <p class="external-link-button"><%= link_to 'Open Live Project',"http://#{p.github}", target: "_blank" %></p>
               <hr>
             </div>
           </div>

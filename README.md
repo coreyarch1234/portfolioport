@@ -1,24 +1,14 @@
-# README
+# Problem:
+Developers that do not have the web development skills to build personal portfolios need an easy way to showcase their projects. Current solutions such as, word press (content heavy and can be cumbersome to customize), paper resumes (not descriptive enough), linkedIn (has many different objectives rather than soley for developers to showcase their projects) can be heavily improved.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Solution:
+ProductFolio is a web app that provides simple, beautiful templates for developers to use for showcasing their products. 
 
-Things you may want to cover:
 
-* Ruby version
+##Framework Details:
+* Ruby 2.3.1
+* Postgresql database
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+##Gems:
+* Boostrap
+* Paperclip 5.0.0
