@@ -1,3 +1,5 @@
+<!---->
+
 <style>
 
     .container{
@@ -46,6 +48,10 @@
         -webkit-align-items: center;
         align-items: center;
     }
+    
+    p {
+        font-family: 'Abel';
+    }
 
 </style>
 
@@ -59,8 +65,8 @@
     <div class="column">
         <div class="content">
             <img src="http://i.imgur.com/Mj7Vpur.png">
-            Portfolio Port
-            <%= link_to 'Sign Up', controller: 'users', action: 'new' %>
+            <p style="font-family: 'Space Mono'; font-size: 28px;">Portfolio Port</p>
+            <div><%= link_to 'Sign Up', controller: 'users', action: 'new' %></div>
         </div>
     </div>
     
@@ -72,44 +78,35 @@
     
 </div>
 
-<div class="container" style="background-color: #41daaa">
-    <div class="column" style="background-color: #41dafa">
+<div class="container" style="background-color: #d9f9a5">
+    <div class="column" style="background-color: #f4fec1">
         <div class="content">
-            This is why you should use our app
+            <img src = "https://i.imgur.com/o0DathQ.png">
+            <p style="margin-left: 10px">Ship your product</p>
         </div>
     </div>
     
-    <div class="column" style="background-color: #41dafa">
+    <div class="column" style="background-color: #f4fec1">
         <div class="content">
-            This reason too.
+            
+            <img src="https://i.imgur.com/Aj8nh54.png">
+            <p style="margin-left: 10px">Build your portfolio</p>
+            
         </div>
     </div>
     
-    <div class="column" style="background-color: #41dafa">
+    <div class="column" style="background-color: #f4fec1">
         <div class="content">
-            And this reason
+            
+            <img src = "http://i.imgur.com/kSV1DIb.png">
+            <p style="margin-left: 10px">Share with recruiters</p>
+            
         </div>
     </div>
 
 </div>
 
-<div class="container" style="background-color: #ffdfff">
-    <div class="column" style="background-color: #ccccfa">
-        <div class="content">
-            This is why you should use our app
-        </div>
-    </div>
-    
-    <div class="column" style="background-color: #ccccfa">
-        <div class="content">
-            This reason too.
-        </div>
-    </div>
-    
-    <div class="column" style="background-color: #ccccfa">
-        <div class="content">
-            And this reason
-        </div>
-    </div>
-
+<div>
+<%= link_to 'Sign Up', controller: 'users', action: 'new' %>
 </div>
+
