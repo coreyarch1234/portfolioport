@@ -1,29 +1,114 @@
-<div class="landing-section-one">
-      <div class="jumbotron" >
-          <h1>ProductFolio</h1>
-          <h2>The default place for developers to
-              create impressive portfolios.</h2>
-          <!-- <div class="text-xs-right" class="btn btn-primary btn-lg" role="button"><%= link_to 'Sign Up', controller: 'users', action: 'new' %></div> -->
-      </div>
-  </div>
+<style>
 
-    <!-- <div class="row">
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-          <div class="caption container">
-              <h3>Why?</h3>
-              <p>Save time in creating your own portfolio site. Sign up and submit projects and see your
-              your work come alive. </p>
-          </div>
-        </div>
-      </div>
+    .container{
+        width: 100%;
+        height: 100%;
+        background-color: antiquewhite;
+    }
+    
+    .column {
+/*
+        display: inline-block; 
+        width: 33%; 
+        height: 100%; 
+        background-color: #22f4a2; 
+        color: white;
+*/
+        background-color: antiquewhite; 
+        display: inline-block; 
+/*        position: absolute;*/
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
+        width: 33%;
+        height: 100%;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    
+    .column > .content {
+        width: 100%;
+        height: 100%;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
 
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-          <div class="caption container">
-              <h3>How?</h3>
-              <p>Sign up and start customizing your portfolio template.</p>
-          </div>
+</style>
+
+<div class="container">
+    <div class="column">
+        <div class="content">
+            
         </div>
-      </div>
-    </div> -->
+    </div>
+    
+    <div class="column">
+        <div class="content">
+            Portfolio Port
+            <%= link_to 'Sign Up', controller: 'users', action: 'new' %>
+        </div>
+    </div>
+    
+    <div class="column">
+        <div class="content">
+            
+        </div>
+    </div>
+    
+</div>
+
+<div class="container" style="background-color: #41daaa">
+    <div class="column" style="background-color: #41dafa">
+        <div class="content">
+            This is why you should use our app
+        </div>
+    </div>
+    
+    <div class="column" style="background-color: #41dafa">
+        <div class="content">
+            This reason too.
+        </div>
+    </div>
+    
+    <div class="column" style="background-color: #41dafa">
+        <div class="content">
+            And this reason
+        </div>
+    </div>
+
+</div>
+
+<div class="container" style="background-color: #ffdfff">
+    <div class="column" style="background-color: #ccccfa">
+        <div class="content">
+            This is why you should use our app
+        </div>
+    </div>
+    
+    <div class="column" style="background-color: #ccccfa">
+        <div class="content">
+            This reason too.
+        </div>
+    </div>
+    
+    <div class="column" style="background-color: #ccccfa">
+        <div class="content">
+            And this reason
+        </div>
+    </div>
+
+</div>
