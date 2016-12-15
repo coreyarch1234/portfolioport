@@ -36,9 +36,9 @@
         <% end %> -->
       <%= render 'flash_messages' %>
      <% if @current_user %>
-          <p class="navbar-text">Signed in as <%= @current_user.name %> | <%= link_to "Logout", '/logout' %></p>
+          <p class="navbar-text login-signup-button">Signed in as <%= @current_user.name %> | <%= link_to "Logout", '/logout' %></p>
      <% else %>
-         <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
+         <div class= "login-signup-button"><%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %></div>
      <% end %>
 
      <%= yield %>

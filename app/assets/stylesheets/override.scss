@@ -64,6 +64,7 @@ a .hover {
 }
 
 .rightContainer {
+	position: relative;;
     float: right;
     width: 33.33333%;
     height: 80%;
@@ -113,6 +114,20 @@ a .hover {
 	background-color: #6488ac;
 }
 
+.bottom-button{
+	position: absolute;
+	bottom: 10px;
+}
 
+.external-link-button{
+	position: absolute;
+	bottom: 10px;
+}
+
+.login-signup-button{
+	font-family: 'Abel';
+	font-size: 20px;
+	padding: 5px 15px;
+}
 
 // @import "bootstrap";
