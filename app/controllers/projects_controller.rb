@@ -19,7 +19,8 @@ class ProjectsController < ApplicationController
       @user = User.find(params[:user_id])
       @project = @user.projects.new(project_params)
       if @project.save
-        redirect_to(user_projects_path(@user))
+        # redirect_to(user_project_path(@user))
+        redirect_to(controller: "projects", action: "show", id: @project.id)
       else
         flash[:notice] = "Fill in all fields"
         redirect_to(new_user_project_path)

@@ -88,6 +88,11 @@ a .hover {
     font-family: 'Abel';
 }
 
+.button-title{
+	font-family: 'Abel';
+	font-size: 15px;
+}
+
 #signin-container, #signup-container{
     margin: auto;
     text-align: center;
@@ -120,7 +125,7 @@ a .hover {
 }
 
 .external-link-button{
-	position: absolute;
+	position: relative;
 	bottom: 10px;
     color: #87a0b2;
 }

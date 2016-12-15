@@ -1,19 +1,20 @@
 
-
-<div id= "signup-container">
+<body style="background-color: antiquewhite;">
+<div id= "signup-container" >
     <h1>Glad you're joining us!</h1>
 
     <%= form_for(@user) do |f| %>
         <div class="form-group">
-          <div><%= f.text_field :name, placeholder: "Name" %></div>
-          <div><%= f.text_field :email, placeholder: "Email" %></div>
-          <div><%= f.text_field :city, placeholder: "City" %></div>
-          <div><%= f.text_field :about, placeholder: "Who are you? i.e. iOS Developer" %></div>
-          <div><%= f.password_field :password, placeholder: "Enter Password" %></div>
-          <div><%= f.password_field :password_confirmation, placeholder: "Confirm Password" %></div>
+          <div><%= f.text_field :name, placeholder: "Name" , style: "background-color: rgba(255,255,255,0.5)"%></div>
+          <div><%= f.text_field :email, placeholder: "Email",  style: "background-color: rgba(255,255,255,0.5)"%></div>
+          <div><%= f.text_field :city, placeholder: "City",  style: "background-color: rgba(255,255,255,0.5)"%></div>
+          <div><%= f.text_field :about, placeholder: "Who are you? i.e. iOS Developer",  style: "background-color: rgba(255,255,255,0.5)"%></div>
+          <div><%= f.password_field :password, placeholder: "Enter Password",  style: "background-color: rgba(255,255,255,0.5)"%></div>
+          <div><%= f.password_field :password_confirmation, placeholder: "Confirm Password", style: "background-color: rgba(255,255,255,0.5)"%></div>
       </div>
       <div>
           <%= f.submit "Submit" %>
       </div>
     <% end %>
 </div>
+</body>

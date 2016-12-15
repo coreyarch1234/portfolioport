@@ -29,7 +29,7 @@
           <div class="panel-heading">
                <h3 class="panel-title">Images</h3>
           </div>
-            <%= p.file_field :image, style:"width: 90px; height: 40px;" %>
+            <%= p.file_field :image, style:"width: 200px; height: 40px;" %>
         </div>
     </div>
 
@@ -54,9 +54,9 @@
               <div class="panel-heading">
                 <h3 class="panel-title">Features</h3>
               </div>
-            <div ><%= p.text_area :features, placeholder: " What can a user do?", style:"background-color: transparent; width: 90%; height: 270px; color: black; font-family: 'Open Sans Condensed'; font-size: 16px; border: none; border-left: 1px; border-left-style: solid;" %></div>
+            <div ><%= p.text_area :features, placeholder: " What can a user do?", style:"background-color: transparent; width: 90%; height: 210px; color: black; font-family: 'Open Sans Condensed'; font-size: 16px; border: none; border-left: 1px; border-left-style: solid;" %></div>
         </div>
-
+        <%= p.submit "Submit", style: "width: 100%;" %>
     </div>
-    <%= p.submit "Submit" %>
+    <!-- <%= p.submit "Submit", style: "width: 100%;" %> -->
 <% end %>

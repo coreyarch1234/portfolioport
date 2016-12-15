@@ -40,7 +40,7 @@
                <h3 class="panel-title">Screenshots</h3>
           </div>
 
-            <div ><%= p.file_field :image, style:"width: 100px; height:30px;" %></div>
+            <div ><%= p.file_field :image, style:"width: 200px; height:30px;" %></div>
         </div>
 
     </div>
@@ -64,7 +64,9 @@
           <div class="panel-heading">
             <h3 class="panel-title">Technology Used</h3>
           </div>
-    <!--      <form><input type="text" style="background-color: transparent; width: 90%; height: 60px; color: black; font-family: 'Open Sans Condensed'; font-size: 16px;" placeholder=" What frameworks, languages, libraries, and APIs did you use?"></form>-->
+    <!--      <form><input type="text" style="background-color: transparent; width: 90%; height: 60px; color: black; font-family: 'Open Sa
+
+    s Condensed'; font-size: 16px;" placeholder=" What frameworks, languages, libraries, and APIs did you use?"></form>-->
 
             <div ><%= p.text_field :technology, placeholder: "Frameworks, languages, libraries, API, etc...", style:"background-color: transparent; width: 90%; height: 60px; color: black; font-family: 'Open Sans Condensed'; font-size: 16px;" %></div>
         </div>
@@ -75,6 +77,9 @@
           </div>
             <div ><%= p.text_field :github, placeholder: " Optional Project Link", style:"background-color: transparent; width: 90%; height: 60px; color: black; font-family: 'Open Sans Condensed'; font-size: 16px;" %></div>
         </div>
+        <%= p.submit "Submit", style: "width: 100%; margin-top: 95px;" %>
     </div>
-    <%= p.submit "Submit" %>
+    <!-- <div>
+    <%= p.submit "Submit", style: "width: 50%;" %>
+   </div> -->
 <% end %>

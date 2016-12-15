@@ -1,13 +1,14 @@
-
-<div id= "signin-container">
+<body style="background-color: antiquewhite;">
+<div id= "signin-container" >
     <h1>Login</h1>
     <%= form_tag '/login' do %>
         <div class= "form-group">
-          <div><%= text_field_tag :email, nil, placeholder: 'Email'%> </div>
-          <div><%= password_field_tag :password %></div>
+          <div><%= text_field_tag :email, nil, placeholder: 'Email', style: "background-color: rgba(255,255,255,0.5)"%> </div>
+          <div><%= password_field_tag :password , style: "background-color: rgba(255,255,255,0.5)"%></div>
          </div>
       <div>
           <%= submit_tag "Submit" %>
       </div>
     <% end %>
 </div>
+</body>
